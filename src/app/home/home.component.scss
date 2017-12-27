@@ -1,0 +1,19 @@
+.layout {
+  background: rgb(0, 0, 0);
+  .header {
+    background: rgba(0, 0, 255, 0.404);
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    z-index: 20;
+  }
+  .main {
+    background: rgba(25, 40, 248, 0.452);
+    .aside {
+      background: rgba(160, 114, 16, 0.678);
+      box-shadow: 3px 0 6px rgba(33, 30, 243, 0.397);
+      z-index: 10;
+    }
+    .content {
+      background: rgba(0, 255, 42, 0.048);
+    }
+  }
+}

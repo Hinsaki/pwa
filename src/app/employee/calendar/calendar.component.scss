@@ -1,0 +1,20 @@
+.day {
+  border: solid 1px DimGray;
+  .text {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+  }
+  .selected {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    border: dashed 4px skyblue;
+  }
+  .note {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+  }
+}

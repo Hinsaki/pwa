@@ -1,0 +1,18 @@
+<div fxFill fxLayout="column" class="layout">
+  <div class="header" fxLayout="row">
+    <home-header fxFlex (sidenavClick)="sidenav.open()"></home-header>
+  </div>
+  <div fxFlex fxLayout="row" class="main">
+    <div fxFlex="200px" class="aside" fxHide.xs>
+      <home-aside (menuClick)="sidenav.close()"></home-aside>
+    </div>
+    <md-sidenav-container fxFlex>
+      <md-sidenav #sidenav mode="over" class="aside" fxHide fxShow.xs>
+        <home-aside fxFlex="200px" (menuClick)="sidenav.close()"></home-aside>
+      </md-sidenav>
+      <div fxFlex class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </md-sidenav-container>
+  </div>
+</div>
